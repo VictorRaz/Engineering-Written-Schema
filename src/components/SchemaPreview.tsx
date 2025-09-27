@@ -9,7 +9,7 @@ interface SchemaPreviewProps {
 export const SchemaPreview: FC<SchemaPreviewProps> = ({ 
   schema, 
   isGoogleDriveConnected 
-}) => {
+}: SchemaPreviewProps) => {
   const [isExpanded, setIsExpanded] = useState(false)
 
   const handleDownload = () => {

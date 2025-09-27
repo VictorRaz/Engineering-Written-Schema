@@ -4,7 +4,7 @@ interface ProcessingStatusProps {
   stage: string
 }
 
-export const ProcessingStatus: FC<ProcessingStatusProps> = ({ stage }) => {
+export const ProcessingStatus: FC<ProcessingStatusProps> = ({ stage }: ProcessingStatusProps) => {
   return (
     <div className="card">
       <div className="flex items-center space-x-4">

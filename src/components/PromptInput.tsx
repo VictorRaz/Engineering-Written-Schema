@@ -10,7 +10,7 @@ export const PromptInput: FC<PromptInputProps> = ({
   value, 
   onChange, 
   placeholder 
-}) => {
+}: PromptInputProps) => {
   return (
     <div className="space-y-4">
       <textarea

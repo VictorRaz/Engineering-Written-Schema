@@ -8,7 +8,7 @@ interface GoogleDriveIntegrationProps {
 export const GoogleDriveIntegration: FC<GoogleDriveIntegrationProps> = ({
   isConnected,
   onConnectionChange
-}) => {
+}: GoogleDriveIntegrationProps) => {
   const [isConnecting, setIsConnecting] = useState(false)
 
   const handleConnect = async () => {
