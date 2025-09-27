@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
+import { useState, FC } from 'react'
 
 interface GoogleDriveIntegrationProps {
   isConnected: boolean
   onConnectionChange: (connected: boolean) => void
 }
 
-export const GoogleDriveIntegration: React.FC<GoogleDriveIntegrationProps> = ({
+export const GoogleDriveIntegration: FC<GoogleDriveIntegrationProps> = ({
   isConnected,
   onConnectionChange
 }) => {

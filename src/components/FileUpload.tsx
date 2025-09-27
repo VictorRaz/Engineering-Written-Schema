@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from 'react'
+import { useCallback, useState } from 'react'
 import { UploadedFile } from '../App'
 import mammoth from 'mammoth'
 
@@ -6,7 +6,7 @@ interface FileUploadProps {
   onFilesUploaded: (files: UploadedFile[]) => void
 }
 
-export const FileUpload: React.FC<FileUploadProps> = ({ onFilesUploaded }) => {
+export const FileUpload: FC<FileUploadProps> = ({ onFilesUploaded }) => {
   const [isDragActive, setIsDragActive] = useState(false)
 
   const processFiles = useCallback(async (files: FileList) => {

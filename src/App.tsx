@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react'
+import { useState, useCallback } from 'react'
 import { FileUpload } from './components/FileUpload'
 import { PromptInput } from './components/PromptInput'
 import { SchemaPreview } from './components/SchemaPreview'

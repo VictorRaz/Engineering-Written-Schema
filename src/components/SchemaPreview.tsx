@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState, FC } from 'react'
 import { SchemaData } from '../App'
 
 interface SchemaPreviewProps {
@@ -6,7 +6,7 @@ interface SchemaPreviewProps {
   isGoogleDriveConnected: boolean
 }
 
-export const SchemaPreview: React.FC<SchemaPreviewProps> = ({ 
+export const SchemaPreview: FC<SchemaPreviewProps> = ({ 
   schema, 
   isGoogleDriveConnected 
 }) => {

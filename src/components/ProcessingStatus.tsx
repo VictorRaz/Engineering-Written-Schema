@@ -1,10 +1,10 @@
-import React from 'react'
+import { FC } from 'react'
 
 interface ProcessingStatusProps {
   stage: string
 }
 
-export const ProcessingStatus: React.FC<ProcessingStatusProps> = ({ stage }) => {
+export const ProcessingStatus: FC<ProcessingStatusProps> = ({ stage }) => {
   return (
     <div className="card">
       <div className="flex items-center space-x-4">

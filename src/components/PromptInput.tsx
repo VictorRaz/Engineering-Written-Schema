@@ -1,4 +1,4 @@
-import React from 'react'
+import { FC } from 'react'
 
 interface PromptInputProps {
   value: string
@@ -6,7 +6,7 @@ interface PromptInputProps {
   placeholder?: string
 }
 
-export const PromptInput: React.FC<PromptInputProps> = ({ 
+export const PromptInput: FC<PromptInputProps> = ({ 
   value, 
   onChange, 
   placeholder 
